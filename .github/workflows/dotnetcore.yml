@@ -18,4 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Build with dotnet
-      run: dotnet pack ~/Serilog.Sinks.NewRelicLab.Logs/Serilog.Sinks.NewRelicLab.Logs.csproj --output nupkgs --configuration Release
+      run: dotnet pack ./Serilog.Sinks.NewRelicLab.Logs/Serilog.Sinks.NewRelicLab.Logs.csproj  --output ./artifacts --configuration Release
+    - uses: actions/upload-artifact@v1
+      with:
+        name: artifacts
+        path: ./artifacts
