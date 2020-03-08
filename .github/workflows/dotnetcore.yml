@@ -22,4 +22,4 @@ jobs:
     - name: Pack
       run: dotnet pack ./Serilog.Sinks.NewRelicLab.Logs/Serilog.Sinks.NewRelicLab.Logs.csproj  --output ./artifacts --configuration Release
     - name: Publish
-      run: dotnet nuget push "./artifacts/*" --source "github"
+      run: dotnet nuget push "./artifacts/*" --source https://nuget.pkg.github.com/tanaka-takayoshi/index.json -k ${{ secrets.GITHUB_TOKEN }}
