@@ -1,6 +1,8 @@
 # Serilog.Sinks.NewRelicLab.Logs
 A serilog sink that sends logs to New Relic Logs
 
+![.NET Core](https://github.com/tanaka-takayoshi/Serilog.Sinks.NewRelicLab.Logs/workflows/.NET%20Core/badge.svg?branch=master)
+
 Note: This is an unofficial package. Since this is an experimental library, please consider using more robust log shipping method (e.g. fluentd).
 
 ## Requirements
