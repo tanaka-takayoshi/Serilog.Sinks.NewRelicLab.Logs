@@ -13,16 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Download Package artifact
-      uses: actions/download-artifact@master
-      with:
-        name: nupkg
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.2
       with:
         nuget-api-key: ${{ secrets.NUGET_API_KEY }}
-        nuget-version: latest
- 
+        nuget-version: latest 
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
