@@ -29,4 +29,4 @@ jobs:
     - name: Add GPR Source
       run: nuget sources Add -Name "GPR" -Source  https://nuget.pkg.github.com/tanaka-takayoshi/index.json -UserName tanaka-takayoshi -Password ${{ secrets.GITHUB_TOKEN }}
     - name: Publish
-      run: nuget push ".\artifacts\" -Source "GPR"
+      run: nuget push ".\artifacts\" -Source "GPR" -SkipDuplicate 
