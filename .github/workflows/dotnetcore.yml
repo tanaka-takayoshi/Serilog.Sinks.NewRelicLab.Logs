@@ -23,10 +23,10 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Build
-      run: dotnet build ./Serilog.Sinks.NewRelicLab.Logs/Serilog.Sinks.NewRelicLab.Logs.csproj --configuration Release
+      run: dotnet build .\Serilog.Sinks.NewRelicLab.Logs\Serilog.Sinks.NewRelicLab.Logs.csproj --configuration Release
     - name: Pack
-      run: dotnet pack ./Serilog.Sinks.NewRelicLab.Logs/Serilog.Sinks.NewRelicLab.Logs.csproj  --output ./artifacts --configuration Release
+      run: dotnet pack .\Serilog.Sinks.NewRelicLab.Logs\Serilog.Sinks.NewRelicLab.Logs.csproj  --output .\artifacts --configuration Release
     - name: Add GPR Source
       run: nuget sources Add -Name "GPR" -Source  https://nuget.pkg.github.com/tanaka-takayoshi/index.json -UserName tanaka-takayoshi -Password ${{ secrets.GITHUB_TOKEN }}
     - name: Publish
-      run: nuget push "./artifacts/**.nupkg" -Source "GPR"
+      run: nuget push ".\artifacts\" -Source "GPR"
