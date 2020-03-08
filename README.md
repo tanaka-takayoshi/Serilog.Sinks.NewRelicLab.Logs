@@ -11,7 +11,7 @@ Note: This is an unofficial package. Since this is an experimental library, plea
 
 ## Usage
 
-1. Add [Serilog.Sinks.NewRelicLab.Logs]() package.
+1. Add [Serilog.Sinks.NewRelicLab.Logs](https://www.nuget.org/packages/Serilog.Sinks.NewRelicLab.Logs) package.
 
 2. Use [NewRelicLogs()](https://github.com/tanaka-takayoshi/Serilog.Sinks.NewRelicLab.Logs/blob/master/Serilog.Sinks.NewRelicLab.Logs/Extensions.cs#L14) extentione method to configure. Here is [an example code](https://github.com/tanaka-takayoshi/Serilog.Sinks.NewRelicLab.Logs/tree/master/examples/WebApp) using with ASP.NET Core.
 
