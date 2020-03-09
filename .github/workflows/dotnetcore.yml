@@ -27,8 +27,8 @@ jobs:
     - name: Pack
       run: dotnet pack .\Serilog.Sinks.NewRelicLab.Logs\Serilog.Sinks.NewRelicLab.Logs.csproj  --output .\artifacts --configuration Release
     - uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v1
-        with:
-          nupkg-path:  '.\artifacts'
-          repo-owner:  'tanaka-takayoshi'
-          gh-user:  'tanaka-takayoshi'
-          token:  ${{ secrets.GITHUB_TOKEN }}
+      with:
+        nupkg-path:  '.\artifacts'
+        repo-owner:  'tanaka-takayoshi'
+        gh-user:  'tanaka-takayoshi'
+        token:  ${{ secrets.GITHUB_TOKEN }}
