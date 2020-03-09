@@ -5,7 +5,7 @@
     <LangVersion>8.0</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <VersionPrefix>0.1.0</VersionPrefix>
-    <VersionSuffix>alpha</VersionSuffix>
+    <VersionSuffix></VersionSuffix>
     <Authors>Takayoshi Tanaka</Authors>
     <Description>Send logs to New Relic Logs.</Description>
     <RepositoryUrl>https://github.com/tanaka-takayoshi/Serilog.Sinks.NewRelicLab.Logs</RepositoryUrl>
